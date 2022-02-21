@@ -81,7 +81,7 @@ button:hover{
     margin-top: 90px;
     margin-bottom: 10px;
 }
-#message-2{
+#message-2,#message3{
     font-weight: 300;
     font-size: medium;
 }

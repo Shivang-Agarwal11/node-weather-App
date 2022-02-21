@@ -3,7 +3,7 @@ const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
 const messageOne=document.querySelector('#message-1')
 const messageTwo=document.querySelector('#message-2')
-
+const messageThree=document.querySelector('#message-3')
 weatherForm.addEventListener('submit',(event)=>{
     event.preventDefault()
     const location=search.value
@@ -14,10 +14,11 @@ weatherForm.addEventListener('submit',(event)=>{
             if(data.error)
             messageOne.textContent=data.error
             else{
-                messageOne.style.fontSize='xx-large'
-                messageOne.style.fontWeight='900'
-                messageOne.textContent=`${data.temperature}℃ `
-            messageTwo.textContent=data.location
+                messageTwo.style.fontSize='xx-large'
+                messageTwo.style.fontWeight='900'
+                messageTwo.textContent=`${data.temperature}℃ `
+            messageOne.textContent=`Weather in ${data.location}`
+            messageThree.textContent=`There is a ${data.rainfall}% chance of rain`
     
             }
         })
