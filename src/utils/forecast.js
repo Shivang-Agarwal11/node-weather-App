@@ -1,8 +1,8 @@
 const request=require('request')
-const API_KEY='bf1a770e2109011f5369a36dbf2435d8'
+
 const forecast=(latitude,longitude,callback)=>{
     
-    url=`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}`
+    url=`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${process.env.OPENWEATHER_KEY}`
     request({url,json:true},(error,{body})=>{
             if(error){
                     callback("Unable to connect to Weather Services",undefined)
