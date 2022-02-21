@@ -69,7 +69,7 @@ button:hover{
     max-width: 480px;
     padding: 18px;
     color: #cccccc;
-    max-height: 300px;
+    max-height: 400px;
 }
 .search{
     display: flex;
@@ -78,7 +78,7 @@ button:hover{
     justify-content: center;
 }
 #message-1{
-    margin-top: 90px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 #message-2,#message3{
